@@ -1,0 +1,339 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  z-index: 2;
+  padding: 10px 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+header img {
+  height: 35px;
+  display: block;
+}
+header h1 {
+  line-height: 1;
+}
+header h1 .header_link {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#main_slider {
+  min-width: 1740px;
+  width: 100%;
+}
+#main_slider .swiper_main .swiper-slide {
+  position: relative;
+}
+#main_slider img {
+  width: 100%;
+  vertical-align: bottom;
+}
+#main_slider .swiper-slide div.slide_title {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 80px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+}
+#main_slider .swiper-slide div p {
+  font-size: 24px;
+}
+#main_slider .swiper-slide div p:first-child {
+  margin-bottom: -24px;
+  font-size: 18px;
+}
+#main_slider .swiper-slide div h3 {
+  font-family: "Droid 1997";
+  font-size: 100px;
+  font-weight: normal;
+}
+
+#new_item {
+  margin-top: 96px;
+  text-align: center;
+  min-width: 1740px;
+  width: 100%;
+}
+#new_item h2 {
+  font-family: "Droid 1997";
+  text-align: center;
+  font-weight: normal;
+  font-size: 64px;
+  color: #001E63;
+  margin-bottom: 72px;
+}
+#new_item .item_link {
+  display: inline-block;
+  text-align: center;
+  color: #001E63;
+}
+#new_item .item_link span {
+  display: block;
+}
+#new_item .item_link p {
+  font-weight: bold;
+  font-size: 22px;
+}
+#new_item .swiper_newItem {
+  margin-bottom: 88px;
+}
+#new_item .more_btn {
+  border: 1px solid #001E63;
+  color: #001E63;
+  border-radius: 100px;
+  padding: 8px 40px;
+  margin-bottom: 112px;
+  display: inline-block;
+}
+#new_item .item_banner img {
+  width: 100%;
+  min-width: 1740px;
+}
+
+#style_magazine {
+  min-width: 1740px;
+  max-width: 1740px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 0 120px;
+}
+#style_magazine h2 {
+  font-family: "Droid 1997";
+  text-align: center;
+  font-weight: normal;
+  font-size: 64px;
+  color: #001E63;
+  margin-bottom: 72px;
+}
+#style_magazine .slider_container {
+  width: 100%;
+}
+#style_magazine .style_swiper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#style_magazine .style_hover_box {
+  display: flex;
+  text-align: right;
+  align-items: center;
+  position: absolute;
+  background: white;
+  bottom: 16px;
+  justify-content: space-between;
+  left: 50%;
+  transform: translate(-50%, 120%);
+  border-radius: 5px;
+  border: 2px solid #001E63;
+  width: 90%;
+  padding: 8px 24px;
+  transition: 0.5s;
+}
+#style_magazine .style_hover_box p {
+  color: #001E63;
+  font-size: 20px;
+  font-weight: 500;
+}
+#style_magazine .style_swiper:hover .style_hover_box {
+  transform: translate(-50%, -10%);
+}
+#style_magazine .style_link img {
+  vertical-align: bottom;
+}
+#style_magazine .style_hover_box span {
+  font-size: 14px;
+  color: #7B7B7B;
+}
+#style_magazine .style_hover_box span.color {
+  padding: 8px 0;
+  display: inline-block;
+}
+#style_magazine .style_hover_box h3 {
+  color: #001E63;
+  font-size: 24px;
+}
+#style_magazine a > img {
+  width: 100%;
+}
+
+#shop_by_sport {
+  text-align: center;
+  color: #001E63;
+}
+#shop_by_sport h2 {
+  font-family: "Droid 1997";
+  text-align: center;
+  font-weight: normal;
+  font-size: 64px;
+  color: #001E63;
+  margin-bottom: 72px;
+}
+#shop_by_sport .sport_wrap {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1740px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+  max-width: 1740px;
+}
+#shop_by_sport .sport p {
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 24px;
+}
+#shop_by_sport .sport_banner {
+  display: block;
+}
+#shop_by_sport .sport_banner img {
+  width: 100%;
+  min-width: 1740px;
+}
+
+#men_women {
+  min-width: 1740px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 0 120px;
+  text-align: center;
+}
+#men_women h2 {
+  font-family: "Droid 1997";
+  text-align: center;
+  font-weight: normal;
+  font-size: 64px;
+  color: #001E63;
+  margin-bottom: 8px;
+}
+#men_women button {
+  margin-bottom: 80px;
+  border: none;
+  background: #f5f5f5;
+  color: #919191;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 100px;
+}
+#men_women button.active {
+  background: #001E63;
+  color: white;
+}
+#men_women button:first-child {
+  margin-right: 8px;
+}
+#men_women .swiper-slide {
+  width: 350px !important;
+}
+#men_women .wear_link {
+  color: #001E63;
+}
+#men_women .wear_link p {
+  margin-top: 40px;
+}
+#men_women .wear_link span {
+  font-weight: bold;
+}
+
+#event_banner {
+  width: 100%;
+  background: #F6F8FB;
+  text-align: center;
+  margin-bottom: 120px;
+  min-width: 1740px;
+}
+#event_banner .swiper_box {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+#event_banner .swiper_box h3 {
+  font-size: 36px;
+  color: #001E63;
+}
+#event_banner .swiper_box p {
+  font-size: 20px;
+  color: #424242;
+}
+#event_banner .swiper-wrapper .event_link {
+  padding: 48px 0;
+  display: block;
+}
+#event_banner .swiper-pagination {
+  width: 60px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  left: unset;
+  right: 30%;
+  bottom: unset;
+  top: 16px;
+}
+#event_banner .swiper-button-prev, #event_banner .swiper-button-next {
+  color: #a4a4a4;
+}
+#event_banner .swiper-navigation-icon {
+  width: 70%;
+  height: 70%;
+}
+
+#footer {
+  background: #001E63;
+  color: white;
+  margin-top: 160px;
+  min-width: 1740px;
+  font-size: 14px;
+}
+#footer .footer-wrap {
+  min-width: 1740px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 90px 48px;
+}
+#footer .footer_logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  justify-content: space-between;
+}
+#footer .footer_logo a {
+  display: inline-block;
+}
+#footer .footer_logo div a:nth-child(2) {
+  margin: 0 8px;
+}
+#footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+}
+#footer li div:nth-child(2) {
+  margin: 0 40px;
+}
+#footer li:last-child {
+  text-align: right;
+  display: flex;
+}
+#footer li:last-child a {
+  display: block;
+  padding: 4px 0;
+  font-weight: 500;
+}
+#footer li:first-child h3 {
+  margin-bottom: 8px;
+}
+#footer li:first-child :nth-child(2) {
+  padding-bottom: 16px;
+}
+#footer li:first-child :nth-child(6) {
+  padding-top: 16px;
+}
+#footer li:first-child :nth-child(4) {
+  margin: 0 16px;
+}
+#footer li:first-child :nth-child(7) {
+  padding: 8px 0;
+}/*# sourceMappingURL=main.css.map */
