@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 
 export default function EventBanner() {
     return(
-        <div id="event_banner">
+        <div id="event_banner" data-aos="fade-up">
             <div className="swiper_box">
                 <Swiper modules={[Pagination, Navigation]} navigation={true} pagination={{type: 'fraction'}}>
                     <SwiperSlide>

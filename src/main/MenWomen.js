@@ -5,7 +5,7 @@ import 'swiper/css';
 
 export default function MenWomen() {
     return(
-        <div id="men_women">
+        <div id="men_women" data-aos="fade-up">
             <h2>LIGHTER & FASTER</h2>
 
             <div>

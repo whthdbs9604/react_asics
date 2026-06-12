@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function ShopBySport() {
     return(
-        <div id="shop_by_sport">
+        <div id="shop_by_sport" data-aos="fade-up">
             <h2>SHOP BY SPORT</h2>
             <div className="sport_wrap">
                 <div className="sport">

@@ -5,7 +5,7 @@ import 'swiper/css';
 
 export default function MainSlide() {
     return(
-        <div id="new_item">
+        <div id="new_item" data-aos="fade-up">
             <h2>NEW ARRIVALS</h2>
 
             <Swiper slidesPerView={4.5} modules={[FreeMode]} className="swiper_newItem">

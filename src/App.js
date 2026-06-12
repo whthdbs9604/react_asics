@@ -1,4 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './css/reset.css'
 import './App.css';
 import './css/main.css';
@@ -8,17 +11,26 @@ import Home from './main/Home';
 
 
 function App() {
-  return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Header />
 
-        <Routes>
-            <Route path="/" exact={true} element={<Home />} />
-        </Routes>
+    useEffect(() => {
 
-        <Footer />
-    </BrowserRouter>
-  );
+        AOS.init({
+        duration: 1000,
+        once: true,    
+        });
+    }, []);
+
+    return (
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <Header />
+
+            <Routes>
+                <Route path="/" exact={true} element={<Home />} />
+            </Routes>
+
+            <Footer />
+        </BrowserRouter>
+    );
 }
 
 export default App;

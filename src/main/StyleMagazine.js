@@ -5,7 +5,7 @@ import 'swiper/css';
 
 export default function MainSlide() {
     return(
-        <div id="style_magazine">
+        <div id="style_magazine" data-aos="fade-up">
             <h2>STYLE MAGAZINE</h2>
             <div className="slider_container">
                 <Swiper slidesPerView={3} spaceBetween={24} modules={[FreeMode]}  className="style_swiper_wrap">
