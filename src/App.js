@@ -15,9 +15,16 @@ function App() {
     useEffect(() => {
 
         AOS.init({
-        duration: 1000,
-        once: true,    
+        duration: 1200,
+        once: false,
+        mirror: true,
         });
+
+        const timer = setTimeout(() => {
+            AOS.refresh();
+        }, 100);
+
+        return () => clearTimeout(timer);
     }, []);
 
     return (
